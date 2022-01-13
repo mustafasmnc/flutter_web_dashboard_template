@@ -45,7 +45,7 @@ class VerticalMenuItem extends StatelessWidget {
                       padding: EdgeInsets.all(16),
                       child: menuController.returnIconFor(itemName!),
                     ),
-                    if (!menuController.isActive(itemName!))
+                    if (menuController.isActive(itemName!))
                       Flexible(
                         child: CustomText(
                           text: itemName!,

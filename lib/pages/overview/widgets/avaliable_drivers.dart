@@ -102,7 +102,7 @@ class AvaliableDrivers extends StatelessWidget {
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 12, vertical: 6),
                                 child: CustomText(
-                                  text: "Avaliable Delivery",
+                                  text: "Assign Delivery",
                                   color: active.withOpacity(0.7),
                                   weight: FontWeight.bold,
                                 ),

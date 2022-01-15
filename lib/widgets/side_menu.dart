@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:web_dashboard/constants/controller.dart';
 import 'package:web_dashboard/constants/style.dart';
 import 'package:web_dashboard/helpers/responsiveness.dart';
+import 'package:web_dashboard/pages/authentication/authentication.dart';
 import 'package:web_dashboard/routing/routes.dart';
 import 'package:web_dashboard/widgets/custom_text.dart';
 import 'package:web_dashboard/widgets/side_menu_item.dart';
@@ -52,7 +53,7 @@ class SideMenu extends StatelessWidget {
                           : itemName,
                       onTap: () {
                         if (itemName == AuthenticationPageRoute) {
-                          //TODO: go to the authentication page
+                          Get.offAll(() => AuthenticationPage());
                         }
                         if (!menuController.isActive(itemName)) {
                           menuController.changeActiveItemTo(itemName);

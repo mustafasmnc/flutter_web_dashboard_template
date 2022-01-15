@@ -60,7 +60,7 @@ class RevenueSectionLarge extends StatelessWidget {
                   ),
                   RevenueInfo(
                     title: "Last 7 days",
-                    amount: "155",
+                    amount: "164",
                   ),
                 ],
               ),
@@ -69,11 +69,11 @@ class RevenueSectionLarge extends StatelessWidget {
                 children: [
                   RevenueInfo(
                     title: "Last 30 days",
-                    amount: "1256",
+                    amount: "656",
                   ),
                   RevenueInfo(
                     title: "Last 12 months",
-                    amount: "8239",
+                    amount: "7887",
                   ),
                 ],
               ),

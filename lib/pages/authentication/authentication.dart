@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:web_dashboard/constants/controller.dart';
 import 'package:web_dashboard/constants/style.dart';
 import 'package:web_dashboard/layout.dart';
+import 'package:web_dashboard/routing/routes.dart';
 import 'package:web_dashboard/widgets/custom_text.dart';
 
 class AuthenticationPage extends StatelessWidget {
@@ -84,7 +86,9 @@ class AuthenticationPage extends StatelessWidget {
               SizedBox(height: 15),
               InkWell(
                 onTap: () {
-                  Get.offAll(() => SiteLayout());
+                  menuController
+                              .changeActiveItemTo(OverViewPageDisplayName);
+                  Get.offAllNamed(RootRoute);
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -113,22 +117,5 @@ class AuthenticationPage extends StatelessWidget {
         ),
       ),
     );
-    // return Column(
-    //   children: [
-    //     Obx(() => Row(
-    //           children: [
-    //             Container(
-    //               margin: EdgeInsets.only(
-    //                   top: ResponsiveWidget.isSmallScreen(context) ? 56 : 6),
-    //               child: CustomText(
-    //                 text: menuController.activeItem.value,
-    //                 size: 24,
-    //                 weight: FontWeight.bold,
-    //               ),
-    //             )
-    //           ],
-    //         ))
-    //   ],
-    // );
   }
 }
